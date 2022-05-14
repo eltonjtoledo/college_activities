@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: exercicios.Main
+Class-Path: controlsfx-11.0.1.jar controlsfx-11.0.1.jar controlsfx-11.0.
+ 1.jar javafx-swt.jar javafx.base.jar javafx.controls.jar javafx.fxml.ja
+ r javafx.graphics.jar javafx.media.jar javafx.swing.jar javafx.web.jar
+

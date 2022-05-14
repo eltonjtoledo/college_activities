@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="grid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="400.0" styleClass="grid" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exercicios.CalculadoraController">
+  <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="10.0" prefWidth="301.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="10.0" prefWidth="301.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="299.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="299.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="391.0" minWidth="10.0" prefWidth="299.0" />
+  </columnConstraints>
+
+  <rowConstraints>
+      <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="80.0" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="80.0" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="80.0" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints fillHeight="false" maxHeight="80.0" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="80.0" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="btn_ac" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="AC" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_operation" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="btn_base" text="8" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_5" mnemonicParsing="false" styleClass="btn_base" text="5" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_7" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="185.0" mnemonicParsing="false" styleClass="btn_base" text="7" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_4" layoutX="15.0" layoutY="268.0" mnemonicParsing="false" styleClass="btn_base" text="4" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_2" alignment="CENTER" contentDisplay="CENTER" layoutX="176.0" layoutY="185.0" mnemonicParsing="false" styleClass="btn_base" text="2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_1" alignment="CENTER" contentDisplay="CENTER" layoutX="176.0" layoutY="185.0" mnemonicParsing="false" styleClass="btn_base" text="1" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_3" layoutX="172.0" layoutY="268.0" mnemonicParsing="false" styleClass="btn_base" text="3" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_9" layoutX="96.0" layoutY="268.0" mnemonicParsing="false" styleClass="btn_base" text="9" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_6" alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="185.0" mnemonicParsing="false" styleClass="btn_base" text="6" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btn_a" alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="185.0" mnemonicParsing="false" text="A" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_letra" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_b" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="101.0" mnemonicParsing="false" text="B" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_letra" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_c" alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="101.0" mnemonicParsing="false" text="C" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_letra" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_e" alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="101.0" mnemonicParsing="false" text="E" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_letra" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_d" alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="101.0" mnemonicParsing="false" text="D" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_letra" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_f" alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="268.0" mnemonicParsing="false" text="F" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_letra" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_0" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="351.0" mnemonicParsing="false" styleClass="btn_base" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7">
+         <padding>
+            <Insets bottom="20.0" left="68.0" right="68.0" top="20.0" />
+         </padding>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_ponto" layoutX="176.0" layoutY="351.0" mnemonicParsing="false" styleClass="btn_base" text="." textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_igual" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="351.0" mnemonicParsing="false" text="=" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_operation" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_plus" alignment="CENTER" contentDisplay="CENTER" layoutX="255.0" layoutY="268.0" mnemonicParsing="false" text="+" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_operation" />
+            <String fx:value="dbl_h" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_cross" alignment="CENTER" contentDisplay="CENTER" layoutX="253.0" layoutY="434.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="71.0" text="x" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_operation" />
+            <String fx:value="dbl_h" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_div" alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="185.0" mnemonicParsing="false" text="/" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_operation" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btn_minus" alignment="CENTER" contentDisplay="CENTER" layoutX="253.0" layoutY="434.0" mnemonicParsing="false" text="-" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_operation" />
+         </styleClass>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333333" height="75.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="box_text" width="384.0" GridPane.columnIndex="1" GridPane.columnSpan="5">
+         <GridPane.margin>
+            <Insets left="7.0" right="10.0" />
+         </GridPane.margin></Rectangle>
+      <Label id="txt_valor" fx:id="txt_valor" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="51.0" prefWidth="215.0" styleClass="txt_valor" text="0" textAlignment="RIGHT" textFill="#cccccc" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="5.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <ComboBox fx:id="convert_from" prefWidth="150.0" promptText="Selecione" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Binario" />
+               <String fx:value="Decimal" />
+               <String fx:value="Hexadecimal" />
+               <String fx:value="Octal" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ComboBox fx:id="convert_to" layoutX="10.0" layoutY="107.0" prefWidth="150.0" promptText="Selecione" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Binario" />
+               <String fx:value="Decimal" />
+               <String fx:value="Hexadecimal" />
+               <String fx:value="Octal" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label text="De:" textFill="#cccccc" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="12.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Button fx:id="btn_convert" alignment="CENTER" contentDisplay="CENTER" layoutX="334.0" layoutY="305.0" mnemonicParsing="false" text="Converter" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn_base" />
+            <String fx:value="btn_operation" />
+         </styleClass>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Button>
+      <Label layoutX="10.0" layoutY="90.0" text="Para:" textFill="#cccccc" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="12.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@style.css" />
+   </stylesheets>
+</GridPane>

@@ -1,0 +1,35 @@
+.grid{
+    -fx-background-color: #555;
+}
+
+.btn_base{
+    -fx-background-color: #333;
+    -fx-text-fill: #cccccc;
+    -fx-pref-width: 73px;
+    -fx-pref-height: 70px;
+}
+
+.dbl_h{
+    -fx-pref-height: 150px;
+}
+
+.txt_valor{
+    -fx-pref-width: 480px;
+    -fx-font-size: 40px;
+    -fx-background-color: #333333;
+    -fx-text-fill: #CCC;
+    -fx-border-color: #333333;
+}
+
+.btn_operation{
+    -fx-background-color: #01579b;
+}
+.btn_letra{
+    -fx-background-color: #FF5722;
+}
+
+.box_text{
+    -fx-fill: #333333;
+    -fx-background-color: #333333;
+}
+
